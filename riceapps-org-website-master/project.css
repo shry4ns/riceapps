@@ -1,0 +1,218 @@
+body {
+  width: 100%;
+  height: 2100px;
+  margin:0;
+  padding:0;
+}
+.project-space{
+  width: 100%;
+  height: 39%;
+  display: flex;
+}
+.project-title {
+  width: 90%;
+  height: 100%;
+  background-image: url("ricebikes.jpg");
+  background-size: 100%;
+  position: relative;
+  box-shadow: 5px 5px 5px gray
+}
+
+.title-filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: gray;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.icons {
+  width: 10%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-parent {
+  width: 100%;
+  height: 30%;
+  position: relative;
+  display: flex;
+}
+
+.members {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  position: relative;
+  display: flex;
+}
+
+.timeline {
+  max-width: 1200px;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+}
+.timeline-bar {
+  position: relative;
+  background: #c0ded9;
+  height: 5px;
+  width: 100%;
+}
+.timeline-point {
+  border-radius: 15px;
+  display: block;
+  background: #618685;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  z-index: 10;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+.timeline-point:hover {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.point-1 {
+  left: 0;
+  top: -5px;
+}
+.point-2 {
+  left: 50%;
+  top: -20px;
+}
+.point-3 {
+  left: 75%;
+  top: -35px;
+}
+.point-4 {
+  left: 100%;
+  top: -50px;
+}
+/* Tooltips */
+.timeline-point[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+.timeline-point[data-tooltip]:after {
+  content: attr(data-tooltip);
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 13px;
+  border: none;
+  color: #fff;
+  bottom: 150%;
+  left: -100%;
+  display: none;
+  z-index: 999;
+}
+.timeline-point[data-tooltip]:hover:after {
+  display: block;
+}
+.leader{
+  width: 220px;
+  float: left;
+  margin-left: 100px;
+  margin-top:10px;
+}
+.leader h2{
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: black;
+  font-style: italic;
+  margin-left: 30%;
+}
+
+.member{
+  height: 220px;
+  width: 220px;
+  background-color: #c0ded9;
+  border-radius: 50%;
+  color: black;  
+  position: absolute;
+}
+.name{
+  padding-top: 37px;
+  padding-left:77px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-size: 25px;
+  transition: ease-in 0.2s;
+  transition-property: opacity;
+  position: absolute;
+  opacity: 0;
+  line-height: 20px;
+}
+
+#icon{
+  color: black;
+  position: absolute;
+  bottom: 35px;
+  left: 95px;
+  font-size: 20px;
+  opacity: 0;
+  transition-property: opacity;
+  position: absolute;
+}
+.member:hover h3{
+  opacity: 1;
+}
+.member:hover #icon{
+  opacity: 1;
+}
+#leader1{
+  margin-top: 10px;
+}
+#leader2{
+  margin-top: 280px;
+}
+.developer{
+  float: left;
+  margin-left: 200px;
+  margin-top:10px;
+}
+.developer h2{
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: black;
+  font-style: italic;
+  margin-left: 30%;
+}
+#dev3{
+  margin-left: 320px;
+  margin-top:10px;
+}
+#dev4{
+  margin-left: 320px;
+  margin-top:280px;
+}
+#dev1{
+  margin-top: 10px;
+}
+#dev2{
+  margin-top: 280px;
+}
+#dev5{
+  margin-left: 640px;
+  margin-top:10px;
+
+}
+#dev6{
+  margin-left: 640px;
+  margin-top:280px;
+}
